@@ -1,11 +1,11 @@
 " Drop this into .vim/plugin.vawa.vim
 " if you already have vawa.vim, rename appropriately
 " automatically highlights variables under cursor, allowing you to easily see the data flow.
- 
+
 " Vawa Plugin for VIM > 7.3 version 1.00
 " Maintainer: Sandeep.c.r<sandeepcr2@gmail.com>
 " Hacked for Perl by Curtis "Ovid" Poe <ovid@allaroundtheworld.fr>
- 
+
 function! s:vawa()
 call clearmatches()
 let s:temp = getpos('.')
@@ -62,7 +62,9 @@ au CursorMoved *.pm call <sid>vawa()
 au CursorMovedi *.pm call <sid>vawa()
 au CursorMoved *.t call <sid>vawa()
 au CursorMovedi *.t call <sid>vawa()
+au CursorMoved *.php call <sid>vawa()
+au CursorMovedi *.php call <sid>vawa()
 augroup END
 endif
- 
+
 command! Vawa :call <sid>vawa()
