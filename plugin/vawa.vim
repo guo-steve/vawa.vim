@@ -64,6 +64,10 @@ au CursorMoved *.t call <sid>vawa()
 au CursorMovedi *.t call <sid>vawa()
 au CursorMoved *.php call <sid>vawa()
 au CursorMovedi *.php call <sid>vawa()
+au CursorMoved *.sh call <sid>vawa()
+au CursorMovedi *.sh call <sid>vawa()
+au CursorMoved *bin/* call <sid>vawa()
+au CursorMovedi *bin/* call <sid>vawa()
 augroup END
 endif
 
